@@ -1,0 +1,30 @@
+.images-parent{
+    text-align: center;
+    background-color:green !important;
+  }
+  .left-image{
+    position:absolute;
+    top:0%;
+    max-width: 20% !important;
+  }
+  .center-image{
+    margin:0 auto;
+    top:80%;
+    max-width: 20% !important;
+  }
+  .right-image{
+    top:20%;
+    max-width: 20% !important;
+  }
+  .top-image{
+    top:40%;
+    max-width: 20% !important;
+  }
+  .bottom-image{
+    top:60%;
+    max-width: 20% !important;
+  }
+  .all-images{
+    position:absolute;
+   
+  }
