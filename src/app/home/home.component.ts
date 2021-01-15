@@ -30,32 +30,21 @@ export class HomeComponent implements OnInit {
    }
   ngOnInit() {
     console.log('ngOnInit');
-    this.extractTextFromPdf('assets/pdfImage.pdf')   
+    //pdf file with image: pdfImage.pdf
+    //pdf file with table: tablePdf.pdf
+    this.extractTextFromPdf('assets/tablePdf.pdf');//pdfImage   
   }
   onReady(){
     console.log('onReady');
   }
   extractTextFromPdf(dropBoxUrl: string) {
     let extractedText:any=0;
-    console.log('IN READ MODE. Reading file');
-    console.log('dropboxurl=',dropBoxUrl);
-    //this.extractTextFromDoc(dropBoxUrl);
     console.log('dropBoxUrl= ',dropBoxUrl);
-    //dropBoxUrl = dropBoxUrl.replace("/private","file:///private");
     var _this=this;
-    
     this.PDFJSViewer.getDocument(dropBoxUrl)
-            .then(pdf => {
-                
-                console.log("pdf loaded:"); console.dir(this.pdfDocument);
-          //let reader = new FileReader();
-          //reader.onloadend = function (encodedFile: any) {
-            //let fileBlob=reader.result;
-            //console.log('fileBlob=  ', fileBlob);
-            //var loadingTask = pdfjsLib.getDocument({data: fileBlob});
-              //loadingTask.promise.then(function(pdf) {
-                console.log('hei1 pdf= ',pdf);
-                for(var i=1;i<(pdf.numPages+1);i++){
+    .then(pdf => {
+      console.log('hei1 pdf= ',pdf);
+      for(var i=1;i<(pdf.numPages+1);i++){
                   //this.loadPage(i);
                   pdf.getPage(i).then(function(page:any) {
                     console.log('hei2 page= ',page);
@@ -74,20 +63,7 @@ export class HomeComponent implements OnInit {
                       //console.log("finalString pdf: "+finalString);
                   });
                   });
-                }
-
-
-
-                
-                
-              //});
-          //};
-          //reader.readAsBinaryString(file);
-        //}else{
-
-        //}
-        
-    
+      }
   }).catch((error)=>{
     console.log(error);
   });    
