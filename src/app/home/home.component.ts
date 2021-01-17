@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
     console.log('ngOnInit');
     //pdf file with image: pdfImage.pdf
     //pdf file with table: tablePdf.pdf
-    this.extractTextFromPdf('assets/tablePdf.pdf');//pdfImage   
+    this.extractTextFromPdf('assets/pdfImage.pdf');//pdfImage   
   }
   onReady(){
     console.log('onReady');
@@ -44,6 +44,8 @@ export class HomeComponent implements OnInit {
     this.PDFJSViewer.getDocument(dropBoxUrl)
     .then(pdf => {
       console.log('hei1 pdf= ',pdf);
+      
+      
       for(var i=1;i<(pdf.numPages+1);i++){
                   //this.loadPage(i);
                   pdf.getPage(i).then(function(page:any) {
@@ -61,7 +63,14 @@ export class HomeComponent implements OnInit {
                       }
                       //extractedText= finalString;
                       //console.log("finalString pdf: "+finalString);
-                  });
+                    });
+                    page.getOperatorList().then(function (ops) {
+                      //for (var i=0; i < ops.fnArray.length; i++) {
+                          //if (ops.fnArray[i] == PDFJS.OPS.paintJpegXObject) {
+                              console.log('ops ',ops);//.argsArray[i][0]);
+                          //}
+                      //}
+                  })
                   });
       }
   }).catch((error)=>{
