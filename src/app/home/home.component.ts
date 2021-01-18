@@ -22,7 +22,8 @@ import * as pdfjsLib from 'pdfjs-dist';
 export class HomeComponent implements OnInit {
   pdfDocument: PDFJS.PDFDocumentProxy;
   PDFJSViewer = PDFJS;
-  
+  objs = [];
+
    constructor(
         public borderMenuCtrl: MenuController,
         private file:File
@@ -34,9 +35,6 @@ export class HomeComponent implements OnInit {
     //pdf file with table: tablePdf.pdf
     this.extractTextFromPdf('assets/pdfImage.pdf');//pdfImage   
   }
-  onReady(){
-    console.log('onReady');
-  }
   extractTextFromPdf(dropBoxUrl: string) {
     let extractedText:any=0;
     console.log('dropBoxUrl= ',dropBoxUrl);
@@ -44,8 +42,6 @@ export class HomeComponent implements OnInit {
     this.PDFJSViewer.getDocument(dropBoxUrl)
     .then(pdf => {
       console.log('hei1 pdf= ',pdf);
-      
-      
       for(var i=1;i<(pdf.numPages+1);i++){
                   //this.loadPage(i);
                   pdf.getPage(i).then(function(page:any) {
@@ -64,13 +60,24 @@ export class HomeComponent implements OnInit {
                       //extractedText= finalString;
                       //console.log("finalString pdf: "+finalString);
                     });
+                    let _this=this;
                     page.getOperatorList().then(function (ops) {
-                      //for (var i=0; i < ops.fnArray.length; i++) {
-                          //if (ops.fnArray[i] == PDFJS.OPS.paintJpegXObject) {
-                              console.log('ops ',ops);//.argsArray[i][0]);
-                          //}
-                      //}
+                      for (var i=0; i < ops.fnArray.length; i++) {
+                        let currentElement=ops.argsArray[i];
+                        console.log('currentElement ',currentElement);
+                        if (ops.fnArray[i] == PDFJS.OPS.paintImageXObject) {
+                            console.log('is image currentElement= ',currentElement);  
+                            console.log('image= ',ops.argsArray[i][0]);
+                            _this.objs.push(ops.argsArray[i][0]);
+
+                          }
+                      }
+                      console.log(_this.args.map(function (a) { 
+                        page.objs.get(a) 
+                      }))
+
                   })
+                    
                   });
       }
   }).catch((error)=>{
@@ -105,11 +112,5 @@ export class HomeComponent implements OnInit {
         return textContentInPage;
       });
 
-  }
-  // https://gist.github.com/hperrin/8830538
-  onInput(event){
-  }
-  ionViewWillEnter() {
-      console.log("hello");
   }
 }
