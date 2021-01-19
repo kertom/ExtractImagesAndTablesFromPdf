@@ -42,7 +42,7 @@ export class HomeComponent implements OnInit {
     .then(pdf => {
       for(var i=1;i<(pdf.numPages+1);i++){
                   pdf.getPage(i).then(function(page:any) {
-                    console.log('hei2 page= ',page);
+                    //console.log('hei2 page= ',page);
                     //here it reads the text if any.
                     /*page.getTextContent().then(value => {
                       //var sentence=JSON.stringify(data);
@@ -59,6 +59,7 @@ export class HomeComponent implements OnInit {
                     });*/
                     //and here we get the image.
                     page.getOperatorList().then(function (ops) {
+                      console.log('ops= ',ops);
                       for (var i=0; i < ops.fnArray.length; i++) {
                         let currentElement=ops.argsArray[i];
                         console.log('currentElement ',currentElement);
