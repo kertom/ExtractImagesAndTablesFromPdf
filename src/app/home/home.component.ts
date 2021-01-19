@@ -75,10 +75,29 @@ export class HomeComponent implements OnInit {
                             currentElement);  
                             let imageName=ops.argsArray[i][0];
                             page.objs.get(imageName, function(img) {  
-                              console.log('image url= ', img.data); 
-                              let finalImageUrl=
-                              new Blob([img.data.buffer], { type: 'image/png' });
-                              console.log('finalImageUrl= ',finalImageUrl);
+                              console.log('image url= ', img.data.buffer); 
+                              let finalImage=
+                              URL.createObjectURL(new Blob([img.data.buffer], 
+                                { type: 'image/png' }));
+                              console.log('finalImageUrl= ',finalImage);
+                              //document.getElementById('my-img').src = 
+                              //finalImage;
+                              // Small red dot image
+                              //const content = new Uint8Array(img.data);
+                                //[137, 80, 78, 71, 13, 10, 26, 10, 0, 0, 0, 13, 73, 72, 68, 82, 0, 0, 0, 5, 0, 0, 0, 5, 8, 6, 0, 0, 0, 141, 111, 38, 229, 0, 0, 0, 28, 73, 68, 65, 84, 8, 215, 99, 248, 255, 255, 63, 195, 127, 6, 32, 5, 195, 32, 18, 132, 208, 49, 241, 130, 88, 205, 4, 0, 14, 245, 53, 203, 209, 142, 14, 31, 0, 0, 0, 0, 73, 69, 78, 68, 174, 66, 96, 130]);
+                                var blob = new Blob( [ img.data ], { type: "image/jpeg" } );
+                                var urlCreator = window.URL || window.webkitURL;
+                                var imageUrl = urlCreator.createObjectURL( blob );
+                                var img = document.querySelector( "#photo" );
+                                //img.src = imageUrl;
+                            
+                              document.getElementById('my-img').src=imageUrl;
+                              //URL.createObjectURL(
+                                //new Blob([content.buffer], { type: 'image/png' } /* (1) */)
+                              //);
+                              
+                              //'assets/fontMenu.png';
+                              //URL.createObjectURL(finalImage);
                             });
                             //console.log('extractedImage= ',extractedImage);
                             //_this.objs.push(ops.argsArray[i][0]);
