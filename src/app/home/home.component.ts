@@ -63,13 +63,24 @@ export class HomeComponent implements OnInit {
                       for (var i=0; i < ops.fnArray.length; i++) {
                         let currentElement=ops.argsArray[i];
                         console.log('currentElement ',currentElement);
+                        var TypedArray = Object.getPrototypeOf(Uint8Array);
+                        //if(currentElement instanceof TypedArray){
+                          //let image=currentElement;
+                          //console.log('image= ',image);
+                        //}
                         if (ops.fnArray[i] == PDFJS.OPS.paintImageXObject) {
                             //here it finds the image as a string ,
                             //i.e: img_p0_1 but not the image data.
                             console.log('is image currentElement= ',
                             currentElement);  
-                            extractedImage=ops.argsArray[i][0];
-                            console.log('extractedImage= ',extractedImage);
+                            let imageName=ops.argsArray[i][0];
+                            page.objs.get(imageName, function(img) {  
+                              console.log('image url= ', img.data); 
+                              let finalImageUrl=
+                              new Blob([img.data.buffer], { type: 'image/png' });
+                              console.log('finalImageUrl= ',finalImageUrl);
+                            });
+                            //console.log('extractedImage= ',extractedImage);
                             //_this.objs.push(ops.argsArray[i][0]);
                         }
                       }
