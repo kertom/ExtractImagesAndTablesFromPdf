@@ -33,21 +33,18 @@ export class HomeComponent implements OnInit {
     console.log('ngOnInit');
     //pdf file with image: pdfImage.pdf
     //pdf file with table: tablePdf.pdf
-    this.extractTextFromPdf('assets/pdfImage.pdf');//pdfImage   
+    this.extractImageFromPdf('assets/pdfImage.pdf');//pdfImage   
   }
-  extractTextFromPdf(dropBoxUrl: string) {
-    let extractedText:any=0;
-    console.log('dropBoxUrl= ',dropBoxUrl);
-    var _this=this;
+  //This method reads a pdf file ,which contains one image.
+  extractImageFromPdf(dropBoxUrl: string) {
+    let extractedImage:any=0;
     this.PDFJSViewer.getDocument(dropBoxUrl)
     .then(pdf => {
-      console.log('hei1 pdf= ',pdf);
       for(var i=1;i<(pdf.numPages+1);i++){
-                  //this.loadPage(i);
                   pdf.getPage(i).then(function(page:any) {
                     console.log('hei2 page= ',page);
-                    //window.objs = []
-                    page.getTextContent().then(value => {
+                    //here it reads the text if any.
+                    /*page.getTextContent().then(value => {
                       //var sentence=JSON.stringify(data);
                       var textItems = value.items;
                       //var finalString='';
@@ -59,58 +56,28 @@ export class HomeComponent implements OnInit {
                       }
                       //extractedText= finalString;
                       //console.log("finalString pdf: "+finalString);
-                    });
-                    let _this=this;
+                    });*/
+                    //and here we get the image.
                     page.getOperatorList().then(function (ops) {
                       for (var i=0; i < ops.fnArray.length; i++) {
                         let currentElement=ops.argsArray[i];
                         console.log('currentElement ',currentElement);
                         if (ops.fnArray[i] == PDFJS.OPS.paintImageXObject) {
-                            console.log('is image currentElement= ',currentElement);  
-                            console.log('image= ',ops.argsArray[i][0]);
-                            _this.objs.push(ops.argsArray[i][0]);
-
-                          }
+                            //here it finds the image as a string ,
+                            //i.e: img_p0_1 but not the image data.
+                            console.log('is image currentElement= ',
+                            currentElement);  
+                            extractedImage=ops.argsArray[i][0];
+                            console.log('extractedImage= ',extractedImage);
+                            //_this.objs.push(ops.argsArray[i][0]);
+                        }
                       }
-                      console.log(_this.args.map(function (a) { 
-                        page.objs.get(a) 
-                      }))
-
-                  })
-                    
+                   })
                   });
       }
   }).catch((error)=>{
     console.log(error);
   });    
-  return extractedText;
-  }
-  loadPage(pageNum: number = 1) {
-    //console.log("loadPage pageNum: "+pageNum);
-    let pdfPage: PDFPageProxy;
-
-      return this.pdfDocument.getPage(pageNum).then(thisPage => {
-          pdfPage = thisPage;
-          
-          pdfPage.getTextContent().then(value=> {
-            var textItems = value.items;
-
-            // Concatenate the string of the item to the final string
-            //for (var i = 0; i < textItems.length; i++) {
-                //var item = textItems[i];
-            //}
-
-            //this.linesArray.push(finalString);
-            //if(pageNum==1){
-            //  this.splitLines(finalString);
-            //}
-
-        });
-         
-      }).then(textContentInPage => {
-        console.log("textContentInPage : "+textContentInPage);
-        return textContentInPage;
-      });
-
+  return extractedImage;
   }
 }
