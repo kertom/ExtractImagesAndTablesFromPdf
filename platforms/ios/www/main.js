@@ -807,7 +807,7 @@ module.exports = "<div style=\"background-color:green\"\nclass=\"item images-par
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".images-parent {\n  text-align: center;\n  background-color: green !important; }\n\n.left-image {\n  position: absolute;\n  top: 0%;\n  max-width: 20% !important; }\n\n.center-image {\n  margin: 0 auto;\n  top: 80%;\n  max-width: 20% !important; }\n\n.right-image {\n  top: 20%;\n  max-width: 20% !important; }\n\n.top-image {\n  top: 40%;\n  max-width: 20% !important; }\n\n.bottom-image {\n  top: 60%;\n  max-width: 20% !important; }\n\n.all-images {\n  position: absolute; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy90aG9tYXNrZXJ0c2FsaXMvQWxsSW9uaWNQcm9qZWN0cy9EeXNFZGl0b3ItcGRmL3NyYy9hcHAvYm9yZGVyL2JvcmRlci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGtCQUFrQjtFQUNsQixrQ0FBaUMsRUFBQTs7QUFFbkM7RUFDRSxrQkFBaUI7RUFDakIsT0FBTTtFQUNOLHlCQUF5QixFQUFBOztBQUUzQjtFQUNFLGNBQWE7RUFDYixRQUFPO0VBQ1AseUJBQXlCLEVBQUE7O0FBRTNCO0VBQ0UsUUFBTztFQUNQLHlCQUF5QixFQUFBOztBQUUzQjtFQUNFLFFBQU87RUFDUCx5QkFBeUIsRUFBQTs7QUFFM0I7RUFDRSxRQUFPO0VBQ1AseUJBQXlCLEVBQUE7O0FBRTNCO0VBQ0Usa0JBQWlCLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9ib3JkZXIvYm9yZGVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmltYWdlcy1wYXJlbnR7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6Z3JlZW4gIWltcG9ydGFudDtcbiAgfVxuICAubGVmdC1pbWFnZXtcbiAgICBwb3NpdGlvbjphYnNvbHV0ZTtcbiAgICB0b3A6MCU7XG4gICAgbWF4LXdpZHRoOiAyMCUgIWltcG9ydGFudDtcbiAgfVxuICAuY2VudGVyLWltYWdle1xuICAgIG1hcmdpbjowIGF1dG87XG4gICAgdG9wOjgwJTtcbiAgICBtYXgtd2lkdGg6IDIwJSAhaW1wb3J0YW50O1xuICB9XG4gIC5yaWdodC1pbWFnZXtcbiAgICB0b3A6MjAlO1xuICAgIG1heC13aWR0aDogMjAlICFpbXBvcnRhbnQ7XG4gIH1cbiAgLnRvcC1pbWFnZXtcbiAgICB0b3A6NDAlO1xuICAgIG1heC13aWR0aDogMjAlICFpbXBvcnRhbnQ7XG4gIH1cbiAgLmJvdHRvbS1pbWFnZXtcbiAgICB0b3A6NjAlO1xuICAgIG1heC13aWR0aDogMjAlICFpbXBvcnRhbnQ7XG4gIH1cbiAgLmFsbC1pbWFnZXN7XG4gICAgcG9zaXRpb246YWJzb2x1dGU7XG4gICBcbiAgfSJdfQ== */"
+module.exports = ".images-parent {\n  text-align: center;\n  background-color: green !important; }\n\n.left-image {\n  position: absolute;\n  top: 0%;\n  max-width: 20% !important; }\n\n.center-image {\n  margin: 0 auto;\n  top: 80%;\n  max-width: 20% !important; }\n\n.right-image {\n  top: 20%;\n  max-width: 20% !important; }\n\n.top-image {\n  top: 40%;\n  max-width: 20% !important; }\n\n.bottom-image {\n  top: 60%;\n  max-width: 20% !important; }\n\n.all-images {\n  position: absolute; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy90aG9tYXNrZXJ0c2FsaXMvQWxsSW9uaWNQcm9qZWN0cy9FeHRyYWN0SW1hZ2VzQW5kVGFibGVzRnJvbVBkZi9zcmMvYXBwL2JvcmRlci9ib3JkZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxrQkFBa0I7RUFDbEIsa0NBQWlDLEVBQUE7O0FBRW5DO0VBQ0Usa0JBQWlCO0VBQ2pCLE9BQU07RUFDTix5QkFBeUIsRUFBQTs7QUFFM0I7RUFDRSxjQUFhO0VBQ2IsUUFBTztFQUNQLHlCQUF5QixFQUFBOztBQUUzQjtFQUNFLFFBQU87RUFDUCx5QkFBeUIsRUFBQTs7QUFFM0I7RUFDRSxRQUFPO0VBQ1AseUJBQXlCLEVBQUE7O0FBRTNCO0VBQ0UsUUFBTztFQUNQLHlCQUF5QixFQUFBOztBQUUzQjtFQUNFLGtCQUFpQixFQUFBIiwiZmlsZSI6InNyYy9hcHAvYm9yZGVyL2JvcmRlci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5pbWFnZXMtcGFyZW50e1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOmdyZWVuICFpbXBvcnRhbnQ7XG4gIH1cbiAgLmxlZnQtaW1hZ2V7XG4gICAgcG9zaXRpb246YWJzb2x1dGU7XG4gICAgdG9wOjAlO1xuICAgIG1heC13aWR0aDogMjAlICFpbXBvcnRhbnQ7XG4gIH1cbiAgLmNlbnRlci1pbWFnZXtcbiAgICBtYXJnaW46MCBhdXRvO1xuICAgIHRvcDo4MCU7XG4gICAgbWF4LXdpZHRoOiAyMCUgIWltcG9ydGFudDtcbiAgfVxuICAucmlnaHQtaW1hZ2V7XG4gICAgdG9wOjIwJTtcbiAgICBtYXgtd2lkdGg6IDIwJSAhaW1wb3J0YW50O1xuICB9XG4gIC50b3AtaW1hZ2V7XG4gICAgdG9wOjQwJTtcbiAgICBtYXgtd2lkdGg6IDIwJSAhaW1wb3J0YW50O1xuICB9XG4gIC5ib3R0b20taW1hZ2V7XG4gICAgdG9wOjYwJTtcbiAgICBtYXgtd2lkdGg6IDIwJSAhaW1wb3J0YW50O1xuICB9XG4gIC5hbGwtaW1hZ2Vze1xuICAgIHBvc2l0aW9uOmFic29sdXRlO1xuICAgXG4gIH0iXX0= */"
 
 /***/ }),
 
@@ -908,7 +908,7 @@ IonicGestureConfig = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>HELLO WORLD!</h1>>"
+module.exports = "<h1>HELLO WORLD!</h1>>\n\n<img id='my-img' \nwidth=\"500\" height=\"600\">"
 
 /***/ }),
 
@@ -919,7 +919,7 @@ module.exports = "<h1>HELLO WORLD!</h1>>"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".menuToggleButton {\n  position: absolute;\n  top: 10%;\n  width: 5%;\n  height: 80%;\n  font-size: 20pt;\n  z-index: 10; }\n\n.innerMenuClass {\n  position: absolute;\n  z-index: 1000; }\n\n.menuClass {\n  position: absolute;\n  width: 100%;\n  height: 1024;\n  top: 0%;\n  left: 0%; }\n\n.cke_toolbar {\n  position: absolute;\n  height: 10%; }\n\n.cke_button {\n  padding: 14px 16px !important; }\n\n.cke_button_icon {\n  transform: scale(1.6); }\n\n.spanClass {\n  position: absolute;\n  left: 0%;\n  width: 100%;\n  padding-left: 5px;\n  padding-right: 5px;\n  margin-left: auto;\n  margin-right: auto; }\n\n.pageClass {\n  position: absolute;\n  text-align: left;\n  left: 20%;\n  width: 70%;\n  height: 92%;\n  margin: auto;\n  padding-top: 7%; }\n\n.images-parent {\n  display: none;\n  text-align: center;\n  background-color: green !important;\n  z-index: 2;\n  position: absolute;\n  top: 0%;\n  left: 40%;\n  width: 30%;\n  height: 40%; }\n\n.left-image {\n  position: absolute;\n  top: 0%;\n  max-width: 20% !important; }\n\n.center-image {\n  margin: 0 auto;\n  top: 80%;\n  max-width: 20% !important; }\n\n.right-image {\n  top: 20%;\n  max-width: 20% !important; }\n\n.top-image {\n  top: 40%;\n  max-width: 20% !important; }\n\n.bottom-image {\n  top: 60%;\n  max-width: 20% !important; }\n\n.all-images {\n  position: absolute; }\n\n.underlineLines {\n  text-decoration: underline;\n  text-decoration-color: red;\n  -webkit-text-decoration-color: red; }\n\nspan::-moz-selection {\n  background-color: green; }\n\nspan::selection {\n  background-color: green; }\n\nspan:nth-of-type(3n)::-moz-selection {\n  color: red; }\n\nspan:nth-of-type(3n)::selection {\n  color: red; }\n\nspan:nth-of-type(3n + 1)::-moz-selection {\n  color: #0f0; }\n\nspan:nth-of-type(3n + 1)::selection {\n  color: #0f0; }\n\nspan:nth-of-type(3n + 2)::-moz-selection {\n  color: cyan; }\n\nspan:nth-of-type(3n + 2)::selection {\n  color: cyan; }\n\n.cke_button_on {\n  background-color: #7CA2D5 !important;\n  border-color: #7CA2D5 !important; }\n\n.cke_button_off:hover {\n  background-color: #7CA2D5 !important;\n  border-color: #7CA2D5 !important; }\n\n.optionIsActive {\n  background-color: #FF0000 !important;\n  border-color: #FF0000 !important; }\n\n.cke_menubutton:focus {\n  background-color: unset !important; }\n\n.cke_button__openmenu {\n  border-right: 5px solid #000000aa !important;\n  margin-right: 10px !important; }\n\n@font-face {\n  font-family: OpenDyslexicMono-Regular;\n  src: url('OpenDyslexicMono-Regular.otf') format(\"opentype\"); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy90aG9tYXNrZXJ0c2FsaXMvQWxsSW9uaWNQcm9qZWN0cy9EeXNFZGl0b3ItcGRmL3NyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFFO0VBQ0Usa0JBQWlCO0VBQ2pCLFFBQU87RUFDUCxTQUFRO0VBQ1IsV0FBVTtFQUNWLGVBQWU7RUFDZixXQUFXLEVBQUE7O0FBRWI7RUFDSSxrQkFBa0I7RUFDbEIsYUFBYSxFQUFBOztBQUVqQjtFQUNFLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsWUFBWTtFQUNaLE9BQU07RUFDTixRQUFPLEVBQUE7O0FBRVg7RUFDRSxrQkFBaUI7RUFDakIsV0FBVSxFQUFBOztBQUVaO0VBQ0UsNkJBQTZCLEVBQUE7O0FBRS9CO0VBQ0UscUJBQXFCLEVBQUE7O0FBRXZCO0VBQ0Usa0JBQWlCO0VBQ2pCLFFBQU87RUFDUCxXQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLGtCQUFrQjtFQUNsQixpQkFBaUI7RUFDakIsa0JBQWtCLEVBQUE7O0FBRXBCO0VBQ0Usa0JBQWlCO0VBQ2pCLGdCQUFlO0VBQ2YsU0FBUTtFQUNSLFVBQVM7RUFDVCxXQUFVO0VBQ1YsWUFBVztFQUNYLGVBQWMsRUFBQTs7QUFJaEI7RUFDRSxhQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGtDQUFpQztFQUNqQyxVQUFTO0VBQ1Qsa0JBQWlCO0VBQ2pCLE9BQU07RUFDTixTQUFRO0VBQ1IsVUFBUztFQUNULFdBQVUsRUFBQTs7QUFFWjtFQUNFLGtCQUFpQjtFQUNqQixPQUFNO0VBQ04seUJBQXlCLEVBQUE7O0FBRTNCO0VBQ0UsY0FBYTtFQUNiLFFBQU87RUFDUCx5QkFBeUIsRUFBQTs7QUFFM0I7RUFDRSxRQUFPO0VBQ1AseUJBQXlCLEVBQUE7O0FBRTNCO0VBQ0UsUUFBTztFQUNQLHlCQUF5QixFQUFBOztBQUUzQjtFQUNFLFFBQU87RUFDUCx5QkFBeUIsRUFBQTs7QUFFM0I7RUFDRSxrQkFBaUIsRUFBQTs7QUFFbkI7RUFDRSwwQkFBMEI7RUFDMUIsMEJBQTBCO0VBQzFCLGtDQUFrQyxFQUFBOztBQUVwQztFQUNFLHVCQUF1QixFQUFBOztBQUR6QjtFQUNFLHVCQUF1QixFQUFBOztBQUd6QjtFQUNFLFVBQVUsRUFBQTs7QUFEWjtFQUNFLFVBQVUsRUFBQTs7QUFHWjtFQUNFLFdBQVcsRUFBQTs7QUFEYjtFQUNFLFdBQVcsRUFBQTs7QUFHYjtFQUNFLFdBQVcsRUFBQTs7QUFEYjtFQUNFLFdBQVcsRUFBQTs7QUFFYjtFQUNFLG9DQUFvQztFQUNwQyxnQ0FBZ0MsRUFBQTs7QUFFbEM7RUFDRSxvQ0FBb0M7RUFDcEMsZ0NBQWdDLEVBQUE7O0FBRWxDO0VBQ0Usb0NBQW9DO0VBQ3BDLGdDQUFnQyxFQUFBOztBQUVsQztFQUNFLGtDQUFrQyxFQUFBOztBQUVwQztFQUNFLDRDQUE0QztFQUM1Qyw2QkFBNkIsRUFBQTs7QUFFL0I7RUFDRSxxQ0FBcUM7RUFDckMsMkRBQXNFLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9ob21lL2hvbWUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIgIC5tZW51VG9nZ2xlQnV0dG9ue1xuICAgIHBvc2l0aW9uOmFic29sdXRlO1xuICAgIHRvcDoxMCU7XG4gICAgd2lkdGg6NSU7XG4gICAgaGVpZ2h0OjgwJTtcbiAgICBmb250LXNpemU6IDIwcHQ7XG4gICAgei1pbmRleDogMTA7XG4gIH1cbiAgLmlubmVyTWVudUNsYXNze1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgei1pbmRleDogMTAwMDtcbiAgfVxuICAubWVudUNsYXNze1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDEwMjQ7XG4gICAgdG9wOjAlO1xuICAgIGxlZnQ6MCU7XG59XG4uY2tlX3Rvb2xiYXJ7XG4gIHBvc2l0aW9uOmFic29sdXRlO1xuICBoZWlnaHQ6MTAlO1xufVxuLmNrZV9idXR0b24ge1xuICBwYWRkaW5nOiAxNHB4IDE2cHggIWltcG9ydGFudDtcbn1cbi5ja2VfYnV0dG9uX2ljb24ge1xuICB0cmFuc2Zvcm06IHNjYWxlKDEuNik7XG59ICBcbi5zcGFuQ2xhc3N7XG4gIHBvc2l0aW9uOmFic29sdXRlO1xuICBsZWZ0OjAlO1xuICB3aWR0aDoxMDAlO1xuICBwYWRkaW5nLWxlZnQ6IDVweDtcbiAgcGFkZGluZy1yaWdodDogNXB4O1xuICBtYXJnaW4tbGVmdDogYXV0bztcbiAgbWFyZ2luLXJpZ2h0OiBhdXRvOyAgICAgICBcbn1cbi5wYWdlQ2xhc3N7XG4gIHBvc2l0aW9uOmFic29sdXRlO1xuICB0ZXh0LWFsaWduOmxlZnQ7XG4gIGxlZnQ6MjAlO1xuICB3aWR0aDo3MCU7XG4gIGhlaWdodDo5MiU7XG4gIG1hcmdpbjphdXRvO1xuICBwYWRkaW5nLXRvcDo3JTtcbn1cblxuXG4uaW1hZ2VzLXBhcmVudHtcbiAgZGlzcGxheTpub25lO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGJhY2tncm91bmQtY29sb3I6Z3JlZW4gIWltcG9ydGFudDtcbiAgei1pbmRleDoyO1xuICBwb3NpdGlvbjphYnNvbHV0ZTtcbiAgdG9wOjAlO1xuICBsZWZ0OjQwJTtcbiAgd2lkdGg6MzAlO1xuICBoZWlnaHQ6NDAlO1xufVxuLmxlZnQtaW1hZ2V7XG4gIHBvc2l0aW9uOmFic29sdXRlO1xuICB0b3A6MCU7XG4gIG1heC13aWR0aDogMjAlICFpbXBvcnRhbnQ7XG59XG4uY2VudGVyLWltYWdle1xuICBtYXJnaW46MCBhdXRvO1xuICB0b3A6ODAlO1xuICBtYXgtd2lkdGg6IDIwJSAhaW1wb3J0YW50O1xufVxuLnJpZ2h0LWltYWdle1xuICB0b3A6MjAlO1xuICBtYXgtd2lkdGg6IDIwJSAhaW1wb3J0YW50O1xufVxuLnRvcC1pbWFnZXtcbiAgdG9wOjQwJTtcbiAgbWF4LXdpZHRoOiAyMCUgIWltcG9ydGFudDtcbn1cbi5ib3R0b20taW1hZ2V7XG4gIHRvcDo2MCU7XG4gIG1heC13aWR0aDogMjAlICFpbXBvcnRhbnQ7XG59XG4uYWxsLWltYWdlc3tcbiAgcG9zaXRpb246YWJzb2x1dGU7XG59XG4udW5kZXJsaW5lTGluZXMge1xuICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcbiAgdGV4dC1kZWNvcmF0aW9uLWNvbG9yOiByZWQ7XG4gIC13ZWJraXQtdGV4dC1kZWNvcmF0aW9uLWNvbG9yOiByZWQ7XG59XG5zcGFuOjpzZWxlY3Rpb24ge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBncmVlbjtcbn1cblxuc3BhbjpudGgtb2YtdHlwZSgzbik6OnNlbGVjdGlvbiB7XG4gIGNvbG9yOiByZWQ7XG59IFxuXG5zcGFuOm50aC1vZi10eXBlKDNuICsgMSk6OnNlbGVjdGlvbiB7XG4gIGNvbG9yOiAjMGYwO1xufVxuXG5zcGFuOm50aC1vZi10eXBlKDNuICsgMik6OnNlbGVjdGlvbiB7XG4gIGNvbG9yOiBjeWFuO1xufVxuLmNrZV9idXR0b25fb24ge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjN0NBMkQ1ICFpbXBvcnRhbnQ7XG4gIGJvcmRlci1jb2xvcjogIzdDQTJENSAhaW1wb3J0YW50O1xufVxuLmNrZV9idXR0b25fb2ZmOmhvdmVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzdDQTJENSAhaW1wb3J0YW50O1xuICBib3JkZXItY29sb3I6ICM3Q0EyRDUgIWltcG9ydGFudDtcbn1cbi5vcHRpb25Jc0FjdGl2ZXtcbiAgYmFja2dyb3VuZC1jb2xvcjogI0ZGMDAwMCAhaW1wb3J0YW50O1xuICBib3JkZXItY29sb3I6ICNGRjAwMDAgIWltcG9ydGFudDtcbn1cbi5ja2VfbWVudWJ1dHRvbjpmb2N1cyB7XG4gIGJhY2tncm91bmQtY29sb3I6IHVuc2V0ICFpbXBvcnRhbnQ7XG59XG4uY2tlX2J1dHRvbl9fb3Blbm1lbnUge1xuICBib3JkZXItcmlnaHQ6IDVweCBzb2xpZCAjMDAwMDAwYWEgIWltcG9ydGFudDtcbiAgbWFyZ2luLXJpZ2h0OiAxMHB4ICFpbXBvcnRhbnQ7XG59XG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6IE9wZW5EeXNsZXhpY01vbm8tUmVndWxhcjtcbiAgc3JjOiB1cmwoXCJzcmMvYXNzZXRzL09wZW5EeXNsZXhpY01vbm8tUmVndWxhci5vdGZcIikgZm9ybWF0KFwib3BlbnR5cGVcIik7XG59XG4iXX0= */"
+module.exports = ".menuToggleButton {\n  position: absolute;\n  top: 10%;\n  width: 5%;\n  height: 80%;\n  font-size: 20pt;\n  z-index: 10; }\n\n.innerMenuClass {\n  position: absolute;\n  z-index: 1000; }\n\n.menuClass {\n  position: absolute;\n  width: 100%;\n  height: 1024;\n  top: 0%;\n  left: 0%; }\n\n.cke_toolbar {\n  position: absolute;\n  height: 10%; }\n\n.cke_button {\n  padding: 14px 16px !important; }\n\n.cke_button_icon {\n  transform: scale(1.6); }\n\n.spanClass {\n  position: absolute;\n  left: 0%;\n  width: 100%;\n  padding-left: 5px;\n  padding-right: 5px;\n  margin-left: auto;\n  margin-right: auto; }\n\n.pageClass {\n  position: absolute;\n  text-align: left;\n  left: 20%;\n  width: 70%;\n  height: 92%;\n  margin: auto;\n  padding-top: 7%; }\n\n.images-parent {\n  display: none;\n  text-align: center;\n  background-color: green !important;\n  z-index: 2;\n  position: absolute;\n  top: 0%;\n  left: 40%;\n  width: 30%;\n  height: 40%; }\n\n.left-image {\n  position: absolute;\n  top: 0%;\n  max-width: 20% !important; }\n\n.center-image {\n  margin: 0 auto;\n  top: 80%;\n  max-width: 20% !important; }\n\n.right-image {\n  top: 20%;\n  max-width: 20% !important; }\n\n.top-image {\n  top: 40%;\n  max-width: 20% !important; }\n\n.bottom-image {\n  top: 60%;\n  max-width: 20% !important; }\n\n.all-images {\n  position: absolute; }\n\n.underlineLines {\n  text-decoration: underline;\n  text-decoration-color: red;\n  -webkit-text-decoration-color: red; }\n\nspan::-moz-selection {\n  background-color: green; }\n\nspan::selection {\n  background-color: green; }\n\nspan:nth-of-type(3n)::-moz-selection {\n  color: red; }\n\nspan:nth-of-type(3n)::selection {\n  color: red; }\n\nspan:nth-of-type(3n + 1)::-moz-selection {\n  color: #0f0; }\n\nspan:nth-of-type(3n + 1)::selection {\n  color: #0f0; }\n\nspan:nth-of-type(3n + 2)::-moz-selection {\n  color: cyan; }\n\nspan:nth-of-type(3n + 2)::selection {\n  color: cyan; }\n\n.cke_button_on {\n  background-color: #7CA2D5 !important;\n  border-color: #7CA2D5 !important; }\n\n.cke_button_off:hover {\n  background-color: #7CA2D5 !important;\n  border-color: #7CA2D5 !important; }\n\n.optionIsActive {\n  background-color: #FF0000 !important;\n  border-color: #FF0000 !important; }\n\n.cke_menubutton:focus {\n  background-color: unset !important; }\n\n.cke_button__openmenu {\n  border-right: 5px solid #000000aa !important;\n  margin-right: 10px !important; }\n\n@font-face {\n  font-family: OpenDyslexicMono-Regular;\n  src: url('OpenDyslexicMono-Regular.otf') format(\"opentype\"); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy90aG9tYXNrZXJ0c2FsaXMvQWxsSW9uaWNQcm9qZWN0cy9FeHRyYWN0SW1hZ2VzQW5kVGFibGVzRnJvbVBkZi9zcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBRTtFQUNFLGtCQUFpQjtFQUNqQixRQUFPO0VBQ1AsU0FBUTtFQUNSLFdBQVU7RUFDVixlQUFlO0VBQ2YsV0FBVyxFQUFBOztBQUViO0VBQ0ksa0JBQWtCO0VBQ2xCLGFBQWEsRUFBQTs7QUFFakI7RUFDRSxrQkFBa0I7RUFDbEIsV0FBVztFQUNYLFlBQVk7RUFDWixPQUFNO0VBQ04sUUFBTyxFQUFBOztBQUVYO0VBQ0Usa0JBQWlCO0VBQ2pCLFdBQVUsRUFBQTs7QUFFWjtFQUNFLDZCQUE2QixFQUFBOztBQUUvQjtFQUNFLHFCQUFxQixFQUFBOztBQUV2QjtFQUNFLGtCQUFpQjtFQUNqQixRQUFPO0VBQ1AsV0FBVTtFQUNWLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsaUJBQWlCO0VBQ2pCLGtCQUFrQixFQUFBOztBQUVwQjtFQUNFLGtCQUFpQjtFQUNqQixnQkFBZTtFQUNmLFNBQVE7RUFDUixVQUFTO0VBQ1QsV0FBVTtFQUNWLFlBQVc7RUFDWCxlQUFjLEVBQUE7O0FBSWhCO0VBQ0UsYUFBWTtFQUNaLGtCQUFrQjtFQUNsQixrQ0FBaUM7RUFDakMsVUFBUztFQUNULGtCQUFpQjtFQUNqQixPQUFNO0VBQ04sU0FBUTtFQUNSLFVBQVM7RUFDVCxXQUFVLEVBQUE7O0FBRVo7RUFDRSxrQkFBaUI7RUFDakIsT0FBTTtFQUNOLHlCQUF5QixFQUFBOztBQUUzQjtFQUNFLGNBQWE7RUFDYixRQUFPO0VBQ1AseUJBQXlCLEVBQUE7O0FBRTNCO0VBQ0UsUUFBTztFQUNQLHlCQUF5QixFQUFBOztBQUUzQjtFQUNFLFFBQU87RUFDUCx5QkFBeUIsRUFBQTs7QUFFM0I7RUFDRSxRQUFPO0VBQ1AseUJBQXlCLEVBQUE7O0FBRTNCO0VBQ0Usa0JBQWlCLEVBQUE7O0FBRW5CO0VBQ0UsMEJBQTBCO0VBQzFCLDBCQUEwQjtFQUMxQixrQ0FBa0MsRUFBQTs7QUFFcEM7RUFDRSx1QkFBdUIsRUFBQTs7QUFEekI7RUFDRSx1QkFBdUIsRUFBQTs7QUFHekI7RUFDRSxVQUFVLEVBQUE7O0FBRFo7RUFDRSxVQUFVLEVBQUE7O0FBR1o7RUFDRSxXQUFXLEVBQUE7O0FBRGI7RUFDRSxXQUFXLEVBQUE7O0FBR2I7RUFDRSxXQUFXLEVBQUE7O0FBRGI7RUFDRSxXQUFXLEVBQUE7O0FBRWI7RUFDRSxvQ0FBb0M7RUFDcEMsZ0NBQWdDLEVBQUE7O0FBRWxDO0VBQ0Usb0NBQW9DO0VBQ3BDLGdDQUFnQyxFQUFBOztBQUVsQztFQUNFLG9DQUFvQztFQUNwQyxnQ0FBZ0MsRUFBQTs7QUFFbEM7RUFDRSxrQ0FBa0MsRUFBQTs7QUFFcEM7RUFDRSw0Q0FBNEM7RUFDNUMsNkJBQTZCLEVBQUE7O0FBRS9CO0VBQ0UscUNBQXFDO0VBQ3JDLDJEQUFzRSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiICAubWVudVRvZ2dsZUJ1dHRvbntcbiAgICBwb3NpdGlvbjphYnNvbHV0ZTtcbiAgICB0b3A6MTAlO1xuICAgIHdpZHRoOjUlO1xuICAgIGhlaWdodDo4MCU7XG4gICAgZm9udC1zaXplOiAyMHB0O1xuICAgIHotaW5kZXg6IDEwO1xuICB9XG4gIC5pbm5lck1lbnVDbGFzc3tcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIHotaW5kZXg6IDEwMDA7XG4gIH1cbiAgLm1lbnVDbGFzc3tcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgaGVpZ2h0OiAxMDI0O1xuICAgIHRvcDowJTtcbiAgICBsZWZ0OjAlO1xufVxuLmNrZV90b29sYmFye1xuICBwb3NpdGlvbjphYnNvbHV0ZTtcbiAgaGVpZ2h0OjEwJTtcbn1cbi5ja2VfYnV0dG9uIHtcbiAgcGFkZGluZzogMTRweCAxNnB4ICFpbXBvcnRhbnQ7XG59XG4uY2tlX2J1dHRvbl9pY29uIHtcbiAgdHJhbnNmb3JtOiBzY2FsZSgxLjYpO1xufSAgXG4uc3BhbkNsYXNze1xuICBwb3NpdGlvbjphYnNvbHV0ZTtcbiAgbGVmdDowJTtcbiAgd2lkdGg6MTAwJTtcbiAgcGFkZGluZy1sZWZ0OiA1cHg7XG4gIHBhZGRpbmctcmlnaHQ6IDVweDtcbiAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gIG1hcmdpbi1yaWdodDogYXV0bzsgICAgICAgXG59XG4ucGFnZUNsYXNze1xuICBwb3NpdGlvbjphYnNvbHV0ZTtcbiAgdGV4dC1hbGlnbjpsZWZ0O1xuICBsZWZ0OjIwJTtcbiAgd2lkdGg6NzAlO1xuICBoZWlnaHQ6OTIlO1xuICBtYXJnaW46YXV0bztcbiAgcGFkZGluZy10b3A6NyU7XG59XG5cblxuLmltYWdlcy1wYXJlbnR7XG4gIGRpc3BsYXk6bm9uZTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBiYWNrZ3JvdW5kLWNvbG9yOmdyZWVuICFpbXBvcnRhbnQ7XG4gIHotaW5kZXg6MjtcbiAgcG9zaXRpb246YWJzb2x1dGU7XG4gIHRvcDowJTtcbiAgbGVmdDo0MCU7XG4gIHdpZHRoOjMwJTtcbiAgaGVpZ2h0OjQwJTtcbn1cbi5sZWZ0LWltYWdle1xuICBwb3NpdGlvbjphYnNvbHV0ZTtcbiAgdG9wOjAlO1xuICBtYXgtd2lkdGg6IDIwJSAhaW1wb3J0YW50O1xufVxuLmNlbnRlci1pbWFnZXtcbiAgbWFyZ2luOjAgYXV0bztcbiAgdG9wOjgwJTtcbiAgbWF4LXdpZHRoOiAyMCUgIWltcG9ydGFudDtcbn1cbi5yaWdodC1pbWFnZXtcbiAgdG9wOjIwJTtcbiAgbWF4LXdpZHRoOiAyMCUgIWltcG9ydGFudDtcbn1cbi50b3AtaW1hZ2V7XG4gIHRvcDo0MCU7XG4gIG1heC13aWR0aDogMjAlICFpbXBvcnRhbnQ7XG59XG4uYm90dG9tLWltYWdle1xuICB0b3A6NjAlO1xuICBtYXgtd2lkdGg6IDIwJSAhaW1wb3J0YW50O1xufVxuLmFsbC1pbWFnZXN7XG4gIHBvc2l0aW9uOmFic29sdXRlO1xufVxuLnVuZGVybGluZUxpbmVzIHtcbiAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XG4gIHRleHQtZGVjb3JhdGlvbi1jb2xvcjogcmVkO1xuICAtd2Via2l0LXRleHQtZGVjb3JhdGlvbi1jb2xvcjogcmVkO1xufVxuc3Bhbjo6c2VsZWN0aW9uIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogZ3JlZW47XG59XG5cbnNwYW46bnRoLW9mLXR5cGUoM24pOjpzZWxlY3Rpb24ge1xuICBjb2xvcjogcmVkO1xufSBcblxuc3BhbjpudGgtb2YtdHlwZSgzbiArIDEpOjpzZWxlY3Rpb24ge1xuICBjb2xvcjogIzBmMDtcbn1cblxuc3BhbjpudGgtb2YtdHlwZSgzbiArIDIpOjpzZWxlY3Rpb24ge1xuICBjb2xvcjogY3lhbjtcbn1cbi5ja2VfYnV0dG9uX29uIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzdDQTJENSAhaW1wb3J0YW50O1xuICBib3JkZXItY29sb3I6ICM3Q0EyRDUgIWltcG9ydGFudDtcbn1cbi5ja2VfYnV0dG9uX29mZjpob3ZlciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICM3Q0EyRDUgIWltcG9ydGFudDtcbiAgYm9yZGVyLWNvbG9yOiAjN0NBMkQ1ICFpbXBvcnRhbnQ7XG59XG4ub3B0aW9uSXNBY3RpdmV7XG4gIGJhY2tncm91bmQtY29sb3I6ICNGRjAwMDAgIWltcG9ydGFudDtcbiAgYm9yZGVyLWNvbG9yOiAjRkYwMDAwICFpbXBvcnRhbnQ7XG59XG4uY2tlX21lbnVidXR0b246Zm9jdXMge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB1bnNldCAhaW1wb3J0YW50O1xufVxuLmNrZV9idXR0b25fX29wZW5tZW51IHtcbiAgYm9yZGVyLXJpZ2h0OiA1cHggc29saWQgIzAwMDAwMGFhICFpbXBvcnRhbnQ7XG4gIG1hcmdpbi1yaWdodDogMTBweCAhaW1wb3J0YW50O1xufVxuQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiBPcGVuRHlzbGV4aWNNb25vLVJlZ3VsYXI7XG4gIHNyYzogdXJsKFwic3JjL2Fzc2V0cy9PcGVuRHlzbGV4aWNNb25vLVJlZ3VsYXIub3RmXCIpIGZvcm1hdChcIm9wZW50eXBlXCIpO1xufVxuIl19 */"
 
 /***/ }),
 
@@ -939,9 +939,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_native_file_ngx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic-native/file/ngx */ "./node_modules/@ionic-native/file/ngx/index.js");
 /* harmony import */ var pdfjs_dist_webpack_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! pdfjs-dist/webpack.js */ "./node_modules/pdfjs-dist/webpack.js");
 /* harmony import */ var pdfjs_dist_webpack_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(pdfjs_dist_webpack_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var pdfjs_dist__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! pdfjs-dist */ "./node_modules/pdfjs-dist/build/pdf.js");
-/* harmony import */ var pdfjs_dist__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(pdfjs_dist__WEBPACK_IMPORTED_MODULE_5__);
-
 
 
 
@@ -952,90 +949,95 @@ let HomeComponent = class HomeComponent {
         this.borderMenuCtrl = borderMenuCtrl;
         this.file = file;
         this.PDFJSViewer = pdfjs_dist_webpack_js__WEBPACK_IMPORTED_MODULE_4__;
+        this.objs = [];
     }
     ngOnInit() {
         console.log('ngOnInit');
+        //pdf file with image: pdfImage.pdf
+        //pdf file with table: tablePdf.pdf
+        this.extractImageFromPdf('assets/tablePdf2.pdf');
     }
-    onReady() {
-        console.log('onReady');
-        this.extractTextFromPdf('assets/pdfImage.pdf');
-    }
-    extractTextFromPdf(dropBoxUrl) {
-        let extractedText = 0;
-        console.log('IN READ MODE. Reading file');
-        console.log('dropboxurl=', dropBoxUrl);
-        //this.extractTextFromDoc(dropBoxUrl);
-        console.log('dropBoxUrl= ', dropBoxUrl);
-        //dropBoxUrl = dropBoxUrl.replace("/private","file:///private");
-        var _this = this;
+    //This method reads a pdf file ,which contains one image.
+    extractImageFromPdf(dropBoxUrl) {
+        let extractedImage = 0;
         this.PDFJSViewer.getDocument(dropBoxUrl)
-            .then(file => {
-            console.log("pdf loaded:");
-            console.dir(this.pdfDocument);
-            console.log('File= ', JSON.stringify(file));
-            let reader = new FileReader();
-            reader.onloadend = function (encodedFile) {
-                let fileBlob = reader.result;
-                console.log('fileBlob=  ', fileBlob);
-                var loadingTask = pdfjs_dist__WEBPACK_IMPORTED_MODULE_5__["getDocument"]({ data: fileBlob });
-                loadingTask.promise.then(function (pdf) {
-                    console.log('hei1 pdf= ', pdf);
-                    for (var i = 1; i < (pdf.numPages + 1); i++) {
-                        //this.loadPage(i);
-                        pdf.getPage(i).then(function (page) {
-                            console.log('hei2 page= ', page);
-                            //window.objs = []
-                            page.getTextContent().then(value => {
-                                //var sentence=JSON.stringify(data);
-                                var textItems = value.items;
-                                //var finalString='';
-                                console.log('textItems= ', textItems);
-                                // Concatenate the string of the item to the final string
-                                for (var i = 0; i < textItems.length; i++) {
-                                    var item = textItems[i];
-                                    //finalString += item.str + " ";
-                                }
-                                //extractedText= finalString;
-                                //console.log("finalString pdf: "+finalString);
+            .then(pdf => {
+            for (var i = 1; i < (pdf.numPages + 1); i++) {
+                pdf.getPage(i).then(function (page) {
+                    //console.log('hei2 page= ',page);
+                    //here it reads the text if any.
+                    page.getTextContent().then(value => {
+                        //var sentence=JSON.stringify(data);
+                        var textItems = value.items;
+                        //var finalString='';
+                        console.log('textItems= ', textItems);
+                        // Concatenate the string of the item to the final string
+                        for (var i = 0; i < textItems.length; i++) {
+                            var item = textItems[i];
+                            //finalString += item.str + " ";
+                        }
+                        //extractedText= finalString;
+                        //console.log("finalString pdf: "+finalString);
+                    });
+                    //and here we get the image.
+                    /*page.getOperatorList().then(function (ops) {
+                      console.log('ops= ',ops);
+                      for (var i=0; i < ops.fnArray.length; i++) {
+                        let currentElement=ops.argsArray[i];
+                        console.log('currentElement ',currentElement);
+                        var TypedArray = Object.getPrototypeOf(Uint8Array);
+                        //if(currentElement instanceof TypedArray){
+                          //let image=currentElement;
+                          //console.log('image= ',image);
+                        //}
+                        if (ops.fnArray[i] == PDFJS.OPS.paintImageXObject) {
+                            //here it finds the image as a string ,
+                            //i.e: img_p0_1 but not the image data.
+                            console.log('is image currentElement= ',
+                            currentElement);
+                            let imageName=ops.argsArray[i][0];
+                            page.objs.get(imageName, function(img) {
+                              console.log('image url= ', img);
+                              console.log('image url= ', img.data.buffer);
+                              let finalImage=
+                              URL.createObjectURL(new Blob([img.data.buffer],
+                                { type: 'image/png' }));
+                              console.log('finalImageUrl= ',finalImage);
+                              //document.getElementById('my-img').src =
+                              //finalImage;
+                              // Small red dot image
+                              //const content = new Uint8Array(img.data);
+                                //[137, 80, 78, 71, 13, 10, 26, 10, 0, 0, 0, 13, 73, 72, 68, 82, 0, 0, 0, 5, 0, 0, 0, 5, 8, 6, 0, 0, 0, 141, 111, 38, 229, 0, 0, 0, 28, 73, 68, 65, 84, 8, 215, 99, 248, 255, 255, 63, 195, 127, 6, 32, 5, 195, 32, 18, 132, 208, 49, 241, 130, 88, 205, 4, 0, 14, 245, 53, 203, 209, 142, 14, 31, 0, 0, 0, 0, 73, 69, 78, 68, 174, 66, 96, 130]);
+                                var blob = new Blob( [ img.data.buffer ],
+                                  { type: "image/png" } );
+                                var urlCreator = window.URL || window.webkitURL;
+                                var imageUrl = urlCreator.createObjectURL( blob );
+                                //var img2 = document.querySelector( "#my-img" );
+                                //img2.src = imageUrl;
+                            
+                              let base64Data =
+                              btoa(String.fromCharCode.apply(null, img));
+
+                                document.getElementById('my-img').src=
+                              'data:image/png;base64,' + base64Data;
+                              //URL.createObjectURL(
+                                //new Blob([content.buffer], { type: 'image/png' }
+                              //);
+                              
+                              //'assets/fontMenu.png';
+                              //URL.createObjectURL(finalImage);
                             });
-                        });
-                    }
+                            //console.log('extractedImage= ',extractedImage);
+                            //_this.objs.push(ops.argsArray[i][0]);
+                        }
+                      }
+                    })*/
                 });
-            };
-            reader.readAsBinaryString(file);
-            //}else{
-            //}
+            }
         }).catch((error) => {
             console.log(error);
         });
-        return extractedText;
-    }
-    loadPage(pageNum = 1) {
-        //console.log("loadPage pageNum: "+pageNum);
-        let pdfPage;
-        return this.pdfDocument.getPage(pageNum).then(thisPage => {
-            pdfPage = thisPage;
-            pdfPage.getTextContent().then(value => {
-                var textItems = value.items;
-                // Concatenate the string of the item to the final string
-                //for (var i = 0; i < textItems.length; i++) {
-                //var item = textItems[i];
-                //}
-                //this.linesArray.push(finalString);
-                //if(pageNum==1){
-                //  this.splitLines(finalString);
-                //}
-            });
-        }).then(textContentInPage => {
-            console.log("textContentInPage : " + textContentInPage);
-            return textContentInPage;
-        });
-    }
-    // https://gist.github.com/hperrin/8830538
-    onInput(event) {
-    }
-    ionViewWillEnter() {
-        console.log("hello");
+        return extractedImage;
     }
 };
 HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -1135,7 +1137,7 @@ module.exports = BrowserFS.BFSRequire('fs');
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/thomaskertsalis/AllIonicProjects/DysEditor-pdf/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/thomaskertsalis/AllIonicProjects/ExtractImagesAndTablesFromPdf/src/main.ts */"./src/main.ts");
 
 
 /***/ }),
