@@ -908,7 +908,7 @@ IonicGestureConfig = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>HELLO WORLD!</h1>>\n\n<img id='my-img' \nwidth=\"500\" height=\"600\">"
+module.exports = "<h1>HELLO WORLD!</h1>>\n\n\n<h1>HELLO2</h1>\n<span>Page: <span id=\"page_num\"></span> / <span id=\"page_count\"></span></span>\n<canvas id=\"the-canvas\"></canvas>"
 
 /***/ }),
 
@@ -935,109 +935,42 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
-/* harmony import */ var _ionic_native_file_ngx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic-native/file/ngx */ "./node_modules/@ionic-native/file/ngx/index.js");
-/* harmony import */ var pdfjs_dist_webpack_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! pdfjs-dist/webpack.js */ "./node_modules/pdfjs-dist/webpack.js");
-/* harmony import */ var pdfjs_dist_webpack_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(pdfjs_dist_webpack_js__WEBPACK_IMPORTED_MODULE_4__);
-
+/* harmony import */ var pdfjs_dist_webpack_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! pdfjs-dist/webpack.js */ "./node_modules/pdfjs-dist/webpack.js");
+/* harmony import */ var pdfjs_dist_webpack_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(pdfjs_dist_webpack_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var pdfjs_dist__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! pdfjs-dist */ "./node_modules/pdfjs-dist/build/pdf.js");
+/* harmony import */ var pdfjs_dist__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(pdfjs_dist__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
 
 let HomeComponent = class HomeComponent {
-    constructor(borderMenuCtrl, file) {
-        this.borderMenuCtrl = borderMenuCtrl;
-        this.file = file;
-        this.PDFJSViewer = pdfjs_dist_webpack_js__WEBPACK_IMPORTED_MODULE_4__;
+    constructor() {
+        this.PDFJSViewer = pdfjs_dist_webpack_js__WEBPACK_IMPORTED_MODULE_2__;
         this.objs = [];
+        this.PDFJS = pdfjs_dist__WEBPACK_IMPORTED_MODULE_3__;
+        this.pdfMime = 'application/pdf';
+        //ad = ABOUtils.DOM,
+        //[$, $$] = ad.selectors();
+        this.url = 'assets/pdfImage.pdf'; //"test/pdf_one.pdf";
+        this.pageNum = 11;
+        this.pageCount = 0;
+        this.state = {
+            mime: 'application/pdf',
+            docs: [],
+        };
+        console.log('constructor called.');
+        //this.extractImageFromPdf('assets/tablePdf.pdf');
     }
     ngOnInit() {
         console.log('ngOnInit');
         //pdf file with image: pdfImage.pdf
         //pdf file with table: tablePdf.pdf
-        this.extractImageFromPdf('assets/tablePdf2.pdf');
+        //this.loadPage(this.pageNum);
+        // ('assets/pdfImage.pdf');  
+        //this.handleFiles('assets/pdfImage.pdf'); 
     }
-    //This method reads a pdf file ,which contains one image.
-    extractImageFromPdf(dropBoxUrl) {
-        let extractedImage = 0;
-        this.PDFJSViewer.getDocument(dropBoxUrl)
-            .then(pdf => {
-            for (var i = 1; i < (pdf.numPages + 1); i++) {
-                pdf.getPage(i).then(function (page) {
-                    //console.log('hei2 page= ',page);
-                    //here it reads the text if any.
-                    page.getTextContent().then(value => {
-                        //var sentence=JSON.stringify(data);
-                        var textItems = value.items;
-                        //var finalString='';
-                        console.log('textItems= ', textItems);
-                        // Concatenate the string of the item to the final string
-                        for (var i = 0; i < textItems.length; i++) {
-                            var item = textItems[i];
-                            //finalString += item.str + " ";
-                        }
-                        //extractedText= finalString;
-                        //console.log("finalString pdf: "+finalString);
-                    });
-                    //and here we get the image.
-                    /*page.getOperatorList().then(function (ops) {
-                      console.log('ops= ',ops);
-                      for (var i=0; i < ops.fnArray.length; i++) {
-                        let currentElement=ops.argsArray[i];
-                        console.log('currentElement ',currentElement);
-                        var TypedArray = Object.getPrototypeOf(Uint8Array);
-                        //if(currentElement instanceof TypedArray){
-                          //let image=currentElement;
-                          //console.log('image= ',image);
-                        //}
-                        if (ops.fnArray[i] == PDFJS.OPS.paintImageXObject) {
-                            //here it finds the image as a string ,
-                            //i.e: img_p0_1 but not the image data.
-                            console.log('is image currentElement= ',
-                            currentElement);
-                            let imageName=ops.argsArray[i][0];
-                            page.objs.get(imageName, function(img) {
-                              console.log('image url= ', img);
-                              console.log('image url= ', img.data.buffer);
-                              let finalImage=
-                              URL.createObjectURL(new Blob([img.data.buffer],
-                                { type: 'image/png' }));
-                              console.log('finalImageUrl= ',finalImage);
-                              //document.getElementById('my-img').src =
-                              //finalImage;
-                              // Small red dot image
-                              //const content = new Uint8Array(img.data);
-                                //[137, 80, 78, 71, 13, 10, 26, 10, 0, 0, 0, 13, 73, 72, 68, 82, 0, 0, 0, 5, 0, 0, 0, 5, 8, 6, 0, 0, 0, 141, 111, 38, 229, 0, 0, 0, 28, 73, 68, 65, 84, 8, 215, 99, 248, 255, 255, 63, 195, 127, 6, 32, 5, 195, 32, 18, 132, 208, 49, 241, 130, 88, 205, 4, 0, 14, 245, 53, 203, 209, 142, 14, 31, 0, 0, 0, 0, 73, 69, 78, 68, 174, 66, 96, 130]);
-                                var blob = new Blob( [ img.data.buffer ],
-                                  { type: "image/png" } );
-                                var urlCreator = window.URL || window.webkitURL;
-                                var imageUrl = urlCreator.createObjectURL( blob );
-                                //var img2 = document.querySelector( "#my-img" );
-                                //img2.src = imageUrl;
-                            
-                              let base64Data =
-                              btoa(String.fromCharCode.apply(null, img));
-
-                                document.getElementById('my-img').src=
-                              'data:image/png;base64,' + base64Data;
-                              //URL.createObjectURL(
-                                //new Blob([content.buffer], { type: 'image/png' }
-                              //);
-                              
-                              //'assets/fontMenu.png';
-                              //URL.createObjectURL(finalImage);
-                            });
-                            //console.log('extractedImage= ',extractedImage);
-                            //_this.objs.push(ops.argsArray[i][0]);
-                        }
-                      }
-                    })*/
-                });
-            }
-        }).catch((error) => {
-            console.log(error);
-        });
-        return extractedImage;
+    onReady() {
+        console.log('onReady');
     }
 };
 HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -1047,8 +980,7 @@ HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
         styles: [__webpack_require__(/*! ./home.component.scss */ "./src/app/home/home.component.scss")]
     }),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["MenuController"],
-        _ionic_native_file_ngx__WEBPACK_IMPORTED_MODULE_3__["File"]])
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
 ], HomeComponent);
 
 

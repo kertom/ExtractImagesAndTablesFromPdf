@@ -14,11 +14,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		3DYeGL5GPs1evFqp0W7aCpqgz/4=
+		L8uxFDKgdx8vZ1LVsd+Jpr6BGCM=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		cQozsqwa65xat7+fOkdGy/QlJMA=
+		rywehExLw8NZWQWOoFD22s2y2gM=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		YjL2PbtKHcOKsLv0bMxSvl+ZCJU=
+		RjY1H5AWY+B3H/flp4DdqP14gos=
 		</data>
 		<key>Default-568h@2x.png</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XFRkMEjvqnq2aXoQe/R8R4psqAA=
+		+bbxS1q4EXk2k9oW9JDCDO5T7qU=
 		</data>
 		<key>LaunchImage-1100-Landscape-2436h@3x.png</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		Ao+j7DNb2/2gg0NOvBB3Ph1XhWY=
+		eIinC4zbJFDgjEaSY8STbs8gvlM=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -1654,11 +1654,11 @@
 		</data>
 		<key>www/94.js</key>
 		<data>
-		qR4PosRL4OmKqzBsBPaTV/cgQ9s=
+		V3uoA1OkSrGUcSdx797crT+nB4Y=
 		</data>
 		<key>www/94.js.map</key>
 		<data>
-		Xilk32WzPnT9+FQGFsCLzGb8gQw=
+		KW0nAV9Te9dwaI9KlobTdk2bT48=
 		</data>
 		<key>www/95.js</key>
 		<data>
@@ -3700,6 +3700,10 @@
 		<data>
 		3k1D1YOtrz6aif+PNICnTlDCN2Y=
 		</data>
+		<key>www/assets/myFile.pdf</key>
+		<data>
+		YRQAXmHlLUJ1F5C53Om/0Wtt1yo=
+		</data>
 		<key>www/assets/no borders.png</key>
 		<data>
 		jkwVJSmsuCG+llI1VNBEc03/ldU=
@@ -3796,6 +3800,10 @@
 		<data>
 		qEqZQpCzcnDqFlsCbhNWsjm1cNc=
 		</data>
+		<key>www/assets/tablePdf2.pdf</key>
+		<data>
+		AMpOa/8rYwJSUqSgc0FYuKrTZto=
+		</data>
 		<key>www/assets/test.odt</key>
 		<data>
 		dVfIKN10FjnHfNPrisLTTbMskcU=
@@ -3854,7 +3862,7 @@
 		</data>
 		<key>www/es2015-polyfills.js</key>
 		<data>
-		KGnhUkv/tF5ESkTp/1MhXhxH4TU=
+		JUnLYs9MiaR4LXmbEAoPnVZF7co=
 		</data>
 		<key>www/es2015-polyfills.js.map</key>
 		<data>
@@ -3874,11 +3882,11 @@
 		</data>
 		<key>www/main.js</key>
 		<data>
-		/xNHbwsIZpP+jon2RhLvyNEFxkg=
+		xyHoQKehnGzy9GxhDifvXDlKFT0=
 		</data>
 		<key>www/main.js.map</key>
 		<data>
-		puXigjmc9Udbi+/g4XsiIFAKe08=
+		KZUe7N89pWPqfr0TGhPdufOMNe0=
 		</data>
 		<key>www/plugins/cordova-plugin-advanced-http/www/advanced-http.js</key>
 		<data>
@@ -4078,7 +4086,7 @@
 		</data>
 		<key>www/polyfills.js</key>
 		<data>
-		bKLtjFeMJiNx/tenYQORK/vN+84=
+		0vPO/dd+Whw583jgAAj8OpwyL7s=
 		</data>
 		<key>www/polyfills.js.map</key>
 		<data>
@@ -4094,11 +4102,11 @@
 		</data>
 		<key>www/styles.js</key>
 		<data>
-		AywxENBg+WPbMQUP9BAw+Rqvlds=
+		KpMQQ3oLw0dHWwH2XArwI2dETek=
 		</data>
 		<key>www/styles.js.map</key>
 		<data>
-		tLE9vOMD6Fow7uXJ/yDzI5Wxy/Y=
+		jku8bw4TSD9GmL0CFL++wvQONZQ=
 		</data>
 		<key>www/svg/ios-add-circle-outline.svg</key>
 		<data>
@@ -6917,14 +6925,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y0e1efXfBkoS+yG/VeY0rHw414nuDzDQ7j6IULZR/qI=
+			qzbndtivsitIvbbGvSiZC2REGigbYWt0RuDB/EPfsrI=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o9gVmh3bPYxkTvs8NmRd0gr2s1YdD2PD5opnjSVG3e0=
+			NmY9JtdBlz8i9bfyPzqVZXijqcy95/jGXKUjho0FaDU=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -6938,7 +6946,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			O3DMP5JwYNmviFP99nkbn/ma6WGoI0SiaDbdk2d5PIE=
+			PqLTFKWEJTaVYwqqsGeYTS3Est9gVUrhC+6zicN7WoQ=
 			</data>
 		</dict>
 		<key>Default-568h@2x.png</key>
@@ -7078,7 +7086,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UG8zditNLqpJzngze9szX7cHMwhd+2z91EnDKjQpKq0=
+			HOWIng6m9M5kCsRsOOl+W3M1BJb/K83TB5rZhQXWF9U=
 			</data>
 		</dict>
 		<key>Reader-Button-H.png</key>
@@ -9773,14 +9781,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			syHgRimj8vW0zO1M6QXsLEoKqvzg8uhmvoBtt2NZ3YI=
+			EoNIwbtU0u2lJeaBmP2GQbOZ5msDe3W6Ncyt8a8/A10=
 			</data>
 		</dict>
 		<key>www/94.js.map</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GhuZQG+gdJ7BNhA/7DufkSgFsuCSoB9OEb+P5nrvo98=
+			tcybeglMFm4fYQxUCVUGII0P6uV+jSJn4xVvmufzHAU=
 			</data>
 		</dict>
 		<key>www/95.js</key>
@@ -13353,6 +13361,13 @@
 			qBMLM5f5up8m6mfDLAJ0aXLpS3HxQa4+zDfVXxAnzvM=
 			</data>
 		</dict>
+		<key>www/assets/myFile.pdf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			D9BXOA46gj7L7h8rWNi0BCJQADRYPaB51PPGkIy1DX4=
+			</data>
+		</dict>
 		<key>www/assets/no borders.png</key>
 		<dict>
 			<key>hash2</key>
@@ -13521,6 +13536,13 @@
 			hXJtd7/cmyF/zxZsX+6Jo8DFtDAlrpPDd8ImFAmSylY=
 			</data>
 		</dict>
+		<key>www/assets/tablePdf2.pdf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EC3jOr89nuHfZNBU1hxmo+P9oEJR0diWC2d7EPfNdHw=
+			</data>
+		</dict>
 		<key>www/assets/test.odt</key>
 		<dict>
 			<key>hash2</key>
@@ -13623,7 +13645,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/mwlpMt4gydFIxBOoW919B8RxSMBgFEWA0zuYkBpfFE=
+			BnnwOIAQY3wHujbdwu5a8jux1FNAgaFXIqXRFjsyPwE=
 			</data>
 		</dict>
 		<key>www/es2015-polyfills.js.map</key>
@@ -13658,14 +13680,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BUByvmuIW7Dzg4eTPoyk7b3DEnw0SeTq5jE0OwXxf6s=
+			gzY1EJrLDKOXOzQpW9Tn1k0pS1717Bqjw5nfZmSdqrU=
 			</data>
 		</dict>
 		<key>www/main.js.map</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FnpiZD35rhN4JH/ZcOn6lscXfjH5bUAXoSHyXI1aD8k=
+			ExwgCBleptw28+KwRtWP1Pd9Zz6DFDTkQ2LOAzyYROA=
 			</data>
 		</dict>
 		<key>www/plugins/cordova-plugin-advanced-http/www/advanced-http.js</key>
@@ -14015,7 +14037,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QSZk7MZKoWszSMkyLL9SU2t+dJnDUA4nMj3f0aK9uVw=
+			ljCUW9qo75HxcbZyF3YDyRJf/Ms/WNsZSxU7XhHfSEg=
 			</data>
 		</dict>
 		<key>www/polyfills.js.map</key>
@@ -14043,14 +14065,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4FAFUX/iOT7752kdVx2udnQNxh00ek1MbWB9pi6HeQQ=
+			wPTrfxNJCt6dplSltVqBKStoT6oVx7T7j9ukTBb32b4=
 			</data>
 		</dict>
 		<key>www/styles.js.map</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+sClZffF0FJg5+HL92jK0Dykv1cuZhyDNVkQ4ko2Hrc=
+			WzDtMWpXKzF+jn/9UJEuHlMEZAkA9sctJAruzV4CltU=
 			</data>
 		</dict>
 		<key>www/svg/ios-add-circle-outline.svg</key>
