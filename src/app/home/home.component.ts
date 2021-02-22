@@ -84,12 +84,13 @@ docs: [],
                             //if(currentElement instanceof TypedArray){
                               //let image=currentElement;
                               //console.log('image= ',image);
-                            //}    
+                            //} 
+                            //https://stackoverflow.com/questions/18680261/extract-images-from-pdf-file-with-javascript   
                             if (ops.fnArray[i] == 
                               PDFJS.OPS.paintImageXObject) {
                                 console.log('ops.argsArray[i]= ',
                                   ops.argsArray[i]);
-                                  this.objs.push(ops.argsArray[i][0]);
+                                  //this.objs.push(ops.argsArray[i][0]);
                                   //here it finds the image as a string ,
                                 //i.e: img_p0_1 but not the image data.
                                 console.log('ops.fnArray[i]= ',
@@ -101,18 +102,17 @@ docs: [],
                                 //myImg.src='assets/logoCDV.png';
                                 
                                   //console.log('myimg.src= ',myImg.src);
-                                  document.getElementById("images").
-                                  innerHTML = 
-                                  "<img src='"+ops.argsArray[i][0]+".jpg'>";
+                                  (<HTMLImageElement>document.
+                                  getElementById("my-img")).src = imageName;//ops.argsArray[i][0]+'.jpg';
                                 console.log('document.getElementById("images").innerHTML= ',
-                                document.getElementById("images").innerHTML);
+                                document.getElementById("my-img").innerHTML);
                                 page.objs.get(imageName, function(img) {  
                                   console.log('image url= ', img); 
                                   console.log('image url= ', img.data); 
                                   const content = img.data;//new Uint8Array(img.data);
                                   //myImg.src = imageName+'.png';
                                   console.log('imageName2= ',imageName);
-
+                                  
                                   //window.objs.push(ops.argsArray[i][0]);
                                   
                                   //myImg.src = imageName+'.jng';
@@ -122,7 +122,7 @@ docs: [],
                                     //new Blob([content.buffer], 
                                       //{ type: 'image/png' })
                                   //);
-              
+                                  
                                   //let finalImage=
                                   //URL.createObjectURL(new Blob([img.data.buffer], 
                                     //{ type: 'image/png' }));
@@ -164,7 +164,6 @@ return extractedImage;
   }
   onReady(){
     console.log('onReady');
-
   }
  
 
