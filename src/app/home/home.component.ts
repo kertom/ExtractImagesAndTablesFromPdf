@@ -43,7 +43,7 @@ docs: [],
     console.log('constructor called.');
    }
   ngOnInit() {
-    console.log('ngOnInit');
+    //console.log('ngOnInit');
     //pdf file with image: pdfImage.pdf
     //pdf file with table: tablePdf.pdf
     //this.loadPage(this.pageNum);
