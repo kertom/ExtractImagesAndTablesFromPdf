@@ -25,6 +25,9 @@ export class HomeComponent implements OnInit {
   objs = [];
   PDFJS = pdfjsLib;
   pdfMime = 'application/pdf';
+  sURL = 'https://dl.dropboxusercontent.com/s/9r24qq5s61o7mbi/jpgImagePdf.pdf?dl=0';
+  //bf3e1jr41uemh9f/jpgImagePdf.pdf?dl=0';
+
   //ad = ABOUtils.DOM,
   //[$, $$] = ad.selectors();
    url = 'assets/pdfImage.pdf';//"test/pdf_one.pdf";
@@ -49,119 +52,129 @@ docs: [],
     this.extractImageFromPdf('assets/Liste telephone CDV.pdf');
 
   }
-  extractImageFromPdf(dropBoxUrl: string) {
-    let extractedImage:any=0;
+  extractImageFromPdf(dropBoxUrl) {
+    console.log('hello codepen!!!');
+    let extractedImage=0;
     let _this=this;
-    console.log('extractImageFromPdf');
-    let myImg=<HTMLImageElement>
+    let myImg=
     document.getElementById('my-img');
-                  
-    this.PDFJSViewer.getDocument(dropBoxUrl)
+    //window.objs=[];
+    this.PDFJSViewer.getDocument(this.sURL).promise
      .then(pdf => {
-                    for(var i=1;i<(pdf.numPages+1);i++){
-                      pdf.getPage(i).then(function(page:any) {
-                        console.log('hei2 page= ',page);
-                        //here it reads the text if any.
-                        /*page.getTextContent().then(value => {
-                          //var sentence=JSON.stringify(data);
-                          var textItems = value.items;
-                          //var finalString='';
-                          console.log('textItems= ',textItems);
-                          // Concatenate the string of the item to the final string
-                          for (var i = 0; i < textItems.length; i++) {
-                              var item = textItems[i];
-                              //finalString += item.str + " ";
-                          }
-                          //extractedText= finalString;
-                          //console.log("finalString pdf: "+finalString);
-                        });*/
-                        //and here we get the image.
+         console.log('pdf.numPages= ',pdf.numPages); 
+     for(var i=1;i<(pdf.numPages+1);i++){
+                      pdf.getPage(i).then(function(page) {
                         page.getOperatorList().then(function (ops) {
-                          console.log('ops= ',ops);
-                          for (var i=0; i < ops.fnArray.length; i++) {
-                            let currentElement=ops.argsArray[i];
-                            //var TypedArray = Object.getPrototypeOf(Uint8Array);
-                            //if(currentElement instanceof TypedArray){
-                              //let image=currentElement;
-                              //console.log('image= ',image);
-                            //} 
-                            //https://stackoverflow.com/questions/18680261/extract-images-from-pdf-file-with-javascript   
-                            if (ops.fnArray[i] == 
-                              PDFJS.OPS.paintImageXObject) {
-                                console.log('ops.argsArray[i]= ',
-                                  ops.argsArray[i]);
-                                  //this.objs.push(ops.argsArray[i][0]);
-                                  //here it finds the image as a string ,
-                                //i.e: img_p0_1 but not the image data.
-                                console.log('ops.fnArray[i]= ',
-                                ops.fnArray[i]);
-                                console.log('is image currentElement= ',
-                                currentElement);  
-                                let imageName=ops.argsArray[i][0];
-                                console.log('imageName= ',imageName);
-                                //myImg.src='assets/logoCDV.png';
-                                
-                                  //console.log('myimg.src= ',myImg.src);
-                                  (<HTMLImageElement>document.
-                                  getElementById("my-img")).src = imageName;//ops.argsArray[i][0]+'.jpg';
-                                console.log('document.getElementById("images").innerHTML= ',
-                                document.getElementById("my-img").innerHTML);
+                      //console.log('ops.fnArray= ',ops.fnArray); 
+                      
+                                               
+for (var i=0; i < ops.fnArray.length; i++) {
+ let currentElement=ops.argsArray[i];
+                            
+if(ops.fnArray[i] == PDFJS.OPS.paintImageXObject) {
+                                 //window.objs.push(ops.argsArray[i][0])
+                                let   imageName=ops.argsArray[i][0];
                                 page.objs.get(imageName, function(img) {  
-                                  console.log('image url= ', img); 
-                                  console.log('image url= ', img.data); 
-                                  const content = img.data;//new Uint8Array(img.data);
-                                  //myImg.src = imageName+'.png';
-                                  console.log('imageName2= ',imageName);
+                                    const content = img.data;
+                                  //var u8 = new Uint8Array([65, 66, 67, 68]);
+
+
+//var u8 = new Uint8Array(256);
+//for (var i = 0; i < 256; i++)
+  //  u8[i] = i;
+
+//var newB64 = 
+//btoa(content);
+//String.fromCharCode.apply(null, 
+//console.debug(newB64);
+//console.debug(FromBase64(newB64));
                                   
-                                  //window.objs.push(ops.argsArray[i][0]);
                                   
-                                  //myImg.src = imageName+'.jng';
                                   
-                                  //[137, 80, 78, 71, 13, 10, 26, 10, 0, 0, 0, 13, 73, 72, 68, 82, 0, 0, 0, 5, 0, 0, 0, 5, 8, 6, 0, 0, 0, 141, 111, 38, 229, 0, 0, 0, 28, 73, 68, 65, 84, 8, 215, 99, 248, 255, 255, 63, 195, 127, 6, 32, 5, 195, 32, 18, 132, 208, 49, 241, 130, 88, 205, 4, 0, 14, 245, 53, 203, 209, 142, 14, 31, 0, 0, 0, 0, 73, 69, 78, 68, 174, 66, 96, 130]);
-                                  //URL.createObjectURL(
-                                    //new Blob([content.buffer], 
-                                      //{ type: 'image/png' })
-                                  //);
-                                  
-                                  //let finalImage=
-                                  //URL.createObjectURL(new Blob([img.data.buffer], 
-                                    //{ type: 'image/png' }));
-                                  //console.log('finalImageUrl= ',finalImage);
-                                  //document.getElementById('my-img').src = 
-                                  //finalImage;
-                                  // Small red dot image
-                                  //const content = new Uint8Array(img.data);
-                                    //[137, 80, 78, 71, 13, 10, 26, 10, 0, 0, 0, 13, 73, 72, 68, 82, 0, 0, 0, 5, 0, 0, 0, 5, 8, 6, 0, 0, 0, 141, 111, 38, 229, 0, 0, 0, 28, 73, 68, 65, 84, 8, 215, 99, 248, 255, 255, 63, 195, 127, 6, 32, 5, 195, 32, 18, 132, 208, 49, 241, 130, 88, 205, 4, 0, 14, 245, 53, 203, 209, 142, 14, 31, 0, 0, 0, 0, 73, 69, 78, 68, 174, 66, 96, 130]);
-                                   /* var blob = new Blob( [ img.data.buffer ], 
-                                      { type: "image/png" } );
-                                    var urlCreator = window.URL || window.webkitURL;
-                                    var imageUrl = urlCreator.createObjectURL( blob );
-                                    //var img2 = document.querySelector( "#my-img" );
-                                    //img2.src = imageUrl;
-                                
-                                  let base64Data = 
-                                  btoa(String.fromCharCode.apply(null, img));
-                                    document.getElementById('my-img').src=
-                                  'data:image/png;base64,' + base64Data;
-                                  //URL.createObjectURL(
-                                    //new Blob([content.buffer], { type: 'image/png' }
-                                  //);
-                                  */
-                                  //'assets/fontMenu.png';
-                                  //URL.createObjectURL(finalImage);
+                                  //var newB64=Uint8ToBase64(content);
+                                  //var decoder = new TextDecoder('utf8');
+                                  //var newB64 = btoa(decoder.decode(img.data));  
+                                  //let newB64=btoa(img.data);
+                                    //console.log('newB64= //',newB64);
+                                    //console.log('image now2= ',img);
+                                    (<HTMLImageElement>
+                                    document.getElementById("my-img")).src
+                                    =<any>_this.imagedata_to_image(img);
+                                      //'data:image/png;base64,'+newB64;
                                 });
-                                //console.log('extractedImage= ',extractedImage);
-                                //_this.objs.push(ops.argsArray[i][0]);
-                            }
+                            } 
                           }
-                        })
+                        });
                       });
-              }
-    }).catch((error)=>{
-        console.log(error);
-    });    
-return extractedImage;
+         }
+     }).catch((error)=>{
+        console.log('Error now is: ',error);
+    }); 
+      
   }
+
+  
+  
+  addAlphaChannel(uint8Array, isRGB) {
+    const convertedArray = Array.from(uint8Array);
+    const newArray = [];
+    console.log('hei1');
+    if (!isRGB) {
+        return Uint8ClampedArray.from(uint8Array);
+    }
+    for (let i = 0; convertedArray.length > i; i++) {
+        newArray.push(convertedArray[i])
+        if ((i + 1) % 3 === 0) {
+            newArray.push(255);
+        }
+    }
+    console.log('hei2');
+    return Uint8ClampedArray.from(newArray);
+}
+
+// Base by https://stackoverflow.com/questions/13416800/how-to-generate-an-image-from-imagedata-in-javascript
+imagedata_to_image(imagedata) {
+    try {
+        var canvas = document.createElement('canvas');
+        var ctx = canvas.getContext('2d');
+        canvas.width = imagedata.width;
+        canvas.height = imagedata.height;
+        const isRGB = (imagedata.width * imagedata.height * 3) === imagedata.data.length;
+        const withAlpha = <Uint8ClampedArray>
+        this.addAlphaChannel(imagedata.data, isRGB);
+      console.log('withAlpha= ',withAlpha);  
+      console.log('typeof withAlpha= ',typeof(withAlpha));  
+      const imgData =
+              //ctx.createImageData(imagedata.width, imagedata.height); 
+              new ImageData(<Uint8ClampedArray>withAlpha, imagedata.width, imagedata.height)
+         //ctx.createImageData(imagedata.width, imagedata.height);
+      console.log('typeof= ',typeof(imgData));
+      console.log('imageData= ',imgData);
+
+
+
+
+
+for (var i = 0; i < imgData.data.length; i += 4)
+  {
+  //imageData.data[i+0] = 255;
+  //imageData.data[i+1] = 0;
+  //imageData.data[i+2] = 0;
+  //imageData.data[i+3] = withAlpha;
+  }
+            
+        ctx.putImageData(imgData, 0, 0);
+
+        var image = new Image();
+        image.src = canvas.toDataURL();
+        document.body.appendChild(image)
+        return image;
+    } catch (e) {
+        console.log(e)
+    }
+}
+
+
   onReady(){
     console.log('onReady');
   }
