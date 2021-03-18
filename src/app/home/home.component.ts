@@ -70,7 +70,6 @@ export class HomeComponent implements OnInit {
                 let currentElement = ops.argsArray[i];
                 if ((ops.fnArray[i] == PDFJS.OPS.paintImageXObject) 
                 ||(ops.fnArray[i] == PDFJS.OPS.paintJpegXObject)
-                //||(ops.fnArray[i] == PDFJS.OPS.paint XObject)
                 ){
                   //window.objs.push(ops.argsArray[i][0])
                   let imageName = ops.argsArray[i][0];
@@ -82,7 +81,7 @@ export class HomeComponent implements OnInit {
                     }
                     (<HTMLImageElement>
                       document.getElementById("my-img")).src
-                      = <any>_this.imagedata_to_image(img,isJpg);
+                      = <any>_this.imagedata_to_image(img);
                     //'data:image/png;base64,'+newB64;
                   });
                 }
@@ -109,7 +108,7 @@ export class HomeComponent implements OnInit {
     return Uint8ClampedArray.from(newArray);
   }
   // Base by https://stackoverflow.com/questions/13416800/how-to-generate-an-image-from-imagedata-in-javascript
-  imagedata_to_image(imagedata,isJpg) {
+  imagedata_to_image(imagedata) {
     try {
       let imageString=imagedata+'';
       let isPng=(imageString=='[object HTMLImageElement]');
